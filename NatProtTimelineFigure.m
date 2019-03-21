@@ -1,6 +1,6 @@
-% Draw timeline figure for Nature Protocols paper
-% Want some filamentous stuff with some clusters around/in it (at
-% junctions?) that can then be sampled and measured a few different ways
+% Draw timeline Figure 1 for Nature Protocols paper
+% Want some filamentous stuff with some clusters around/in it (here at 
+% junctions) that can then be sampled and measured a few different ways
 
 FieldSize = 1000; % in nm, for simulations
 RandFieldPoints = 5e2;

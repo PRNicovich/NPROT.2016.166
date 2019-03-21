@@ -2,12 +2,14 @@
 % Want to demonstrate spatial analysis methods on a variety of SMLM
 % methods.
 % Random, clustered, and maybe ordered (dispersed?) data sets
-% - Nearest-neighbor (and cross-channel nearest-neighbor) analysis
+% - Nearest-neighbor analysis
 % - Ripley's K
 % - Pair correlation
 % - DBSCAN
 % - Voronoi/triangulation
-% - Into counting
+%
+% Requires ELKI package, available at:
+% https://elki-project.github.io/releases/
 
 % Make a dataset of random points + Gaussian clusters
 FieldSize = 5000; % in nm
