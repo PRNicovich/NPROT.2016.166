@@ -13,3 +13,5 @@ Philip R Nicovich, Dylan M Owen & Katharina Gaus<br>
 Each can generate new SMLM data for illustration.  Data generated with GenerateNatProtData.m.  Option in code to share datasets by defining previously-saved file for this purpose. 
 
 NatProtFigure.m calls examples of nearest-neighbor, Ripley's K, pair correlation, DBSCAN, Delaunay, and Voronoi clustering analysis all on the same dataset.  See blocks of this code for examples of implementing each of these analyses.
+
+DrawNatProtKineticsFigure.m generates single spatial cluster of points which is then simulated as pentamer of underlying points.  Includes Hidden Markov model simulation of fluorophore kinetics.
