@@ -1,6 +1,6 @@
 #NPROT.2016.166
 
-## Code associated with publication 
+Code associated with publication 
 
 "Turning single-molecule localization microscopy into a quantitative bioanalytical tool" <br>
 Philip R Nicovich, Dylan M Owen & Katharina Gaus<br>
