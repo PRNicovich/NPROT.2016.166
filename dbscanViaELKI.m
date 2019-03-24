@@ -1,11 +1,20 @@
 function ClusterList = dbscanViaELKI(PathTo1txtFile, Epsilon, MinPts, varargin)
 
 % Run DBSCAN algorithm through the ELKI command line interface
+% Download ELKI from :
+% https://elki-project.github.io/releases/
 % Input path to CSV file from ThunderSTORM, 
 % Function returns clustering of each point in an M x 1 vector
 
 % Input path information for elki.jar, input data, and output folder
-pathToELKIjar = 'E:\MATLAB\ELKI\elki.jar';
+% pathToELKIjar = 'E:\MATLAB\ELKI\elki.jar';
+pathToELKIjar = 'C:\Users\Rusty Nicovich\Documents\MATLAB\ELKI\elki-bundle-0.7.5.jar';
+
+if exist(pathToELKIjar, 'file')
+	% Continue
+else
+    error('Path to ELKI file invalid.\n');
+end
 
 if ischar(PathTo1txtFile)
     DataFile = PathTo1txtFile;
@@ -58,7 +67,7 @@ end
 
 % Use strrep to replace variable place-holders with variable values
 executeString = strjoin(callString, ' ');
-executeString = strrep(executeString, '$JARPATH$', pathToELKIjar);
+executeString = strrep(executeString, '$JARPATH$', sprintf('"%s"', pathToELKIjar));
 executeString = strrep(executeString, '$LABELINDICES$', labelIndices);
 executeString = strrep(executeString, '$DATAPATH$', DataFile);
 executeString = strrep(executeString, '$CLUSTERVECTORFILE$', OutPath);
